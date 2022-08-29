@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int t,i,n,j,x,sum;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&n);
+        for(j=1;j<=n;j+=2)
+        {
+            x = n-j+1;
+            x = x*x;
+            sum = sum +x;
+        }
+        printf("%d\n",sum);
+        sum = 0;
+    }
+}
